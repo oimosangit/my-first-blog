@@ -119,5 +119,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-#エラーのため下記を追記.その後解説サイト(メモ参照)を参考にPathを書き換え
+#エラーのため下記を追記.その後解説サイト(メモ参照)を参考にPathを書き換え.media も。
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
